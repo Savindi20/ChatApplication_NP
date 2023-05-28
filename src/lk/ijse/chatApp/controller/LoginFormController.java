@@ -20,7 +20,7 @@ public class LoginFormController {
         stage.setScene(new Scene(FXMLLoader.load(LoginFormController.class.getResource("../view/ChatForm.fxml"))));
         stage.close();
         stage.setTitle("Chat Application");
-//        stage.getIcons().add(new Image("lk/ijse/chatApp/asserts/doulChat.png"));
+        stage.getIcons().add(new Image("lk/ijse/chatApp/view/images/chat-icon.png"));
         stage.centerOnScreen();
         stage.setResizable(false);
         stage.show();
