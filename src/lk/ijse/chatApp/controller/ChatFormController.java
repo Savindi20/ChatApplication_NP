@@ -21,4 +21,40 @@ public class ChatFormController implements Initializable {
     public void initialize(URL location, ResourceBundle resources) {
         LabelClientName.setText(LoginFormController.userName);
     }
+
+    public void emoji1(MouseEvent mouseEvent) {
+    }
+
+    public void emoji2(MouseEvent mouseEvent) {
+    }
+
+    public void emoji3(MouseEvent mouseEvent) {
+    }
+
+    public void emoji4(MouseEvent mouseEvent) {
+    }
+
+    public void emoji5(MouseEvent mouseEvent) {
+    }
+
+    public void emoji6(MouseEvent mouseEvent) {
+    }
+
+    public void emoji7(MouseEvent mouseEvent) {
+    }
+
+    public void emoji8(MouseEvent mouseEvent) {
+    }
+
+    public void emoji9(MouseEvent mouseEvent) {
+    }
+
+    public void emoji10(MouseEvent mouseEvent) {
+    }
+
+    public void emoji11(MouseEvent mouseEvent) {
+    }
+
+    public void emoji12(MouseEvent mouseEvent) {
+    }
 }
