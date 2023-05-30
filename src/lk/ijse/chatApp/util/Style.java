@@ -11,7 +11,7 @@ public class Style {
         hBox.setPadding(new Insets(5, 5, 5, 10));
         text2.setStyle("-fx-font-size: 15px");
         flow2.setStyle("-fx-color:rgb(239,242,255);"
-                + "-fx-background-color: rgb(46, 204, 113);" +
+                + "-fx-background-color: rgb(55, 138, 200);" +
                 "-fx-background-radius: 20px");
         flow2.setPadding(new Insets(5, 10, 5, 10));
         text2.setFill(Color.color(0.934, 0.945, 0.996));
@@ -21,7 +21,7 @@ public class Style {
         hBox.setPadding(new Insets(5, 5, 5, 10));
         text.setStyle("-fx-font-size: 15px");
         flow.setStyle("-fx-color:rgb(239,242,255);"
-                + "-fx-background-color: rgb(52, 152, 219);" +
+                + "-fx-background-color: rgb(197, 55, 200);" +
                 "-fx-background-radius: 20px");
         flow.setPadding(new Insets(5, 10, 5, 10));
         text.setFill(Color.color(0.934, 0.945, 0.996));
