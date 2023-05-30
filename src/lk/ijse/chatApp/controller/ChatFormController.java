@@ -2,6 +2,8 @@ package lk.ijse.chatApp.controller;
 
 import javafx.application.Platform;
 import javafx.geometry.Pos;
+import javafx.scene.Node;
+import javafx.scene.control.ScrollPane;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
@@ -13,6 +15,7 @@ import javafx.scene.paint.Color;
 import javafx.scene.text.Text;
 import javafx.scene.text.TextFlow;
 import javafx.stage.FileChooser;
+import javafx.stage.Stage;
 import lk.ijse.chatApp.util.Style;
 
 import java.io.*;
@@ -24,6 +27,7 @@ public class ChatFormController extends Thread {
     public Pane EmojiPane;
     public javafx.scene.layout.VBox VBox;
     public Text txtClientName;
+    public ScrollPane scrollPane;
 
     BufferedReader reader;
     PrintWriter writer;
@@ -36,6 +40,11 @@ public class ChatFormController extends Thread {
     public void initialize() {
         txtClientName.setText(LoginFormController.userName);
         EmojiPane.setVisible(false);
+
+        scrollPane.setOnMouseExited(e -> {
+            scrollPane.setHbarPolicy(ScrollPane.ScrollBarPolicy.NEVER);
+            scrollPane.setVbarPolicy(ScrollPane.ScrollBarPolicy.NEVER);
+        });
         try {
             socket = new Socket("localhost", 8888);
             System.out.println("Socket is connected with server!");
@@ -78,8 +87,52 @@ public class ChatFormController extends Thread {
                     firstChars = st.substring(0, 3);
 
                 }
-                //
-                     else {
+                //for the Images
+
+                if (firstChars.equalsIgnoreCase("img")) {
+
+                    st = st.substring(3, st.length() - 1);
+
+
+                    File file = new File(st);
+                    Image image = new Image(file.toURI().toString());
+
+                    ImageView imageView = new ImageView(image);
+
+                    imageView.setFitHeight(150);
+                    imageView.setFitWidth(150);
+
+
+                    HBox hBox = new HBox(10);
+                    hBox.setAlignment(Pos.BOTTOM_RIGHT);
+
+
+                    if (!cmd.equalsIgnoreCase(txtClientName.getText())) {
+
+                        VBox.setAlignment(Pos.TOP_LEFT);
+                        hBox.setAlignment(Pos.CENTER_LEFT);
+
+
+                        Text text1 = new Text("  " + cmd + "  ");
+                        text1.setFill(Color.color(0.934, 0.945, 0.996));
+
+                        hBox.getChildren().add(text1);
+                        hBox.getChildren().add(imageView);
+
+                    } else {
+                        hBox.setAlignment(Pos.BOTTOM_RIGHT);
+                        hBox.getChildren().add(imageView);
+                        Text text1 = new Text("      ");
+                        hBox.getChildren().add(text1);
+
+                        text1.setFill(Color.color(0.934, 0.945, 0.996));
+                    }
+
+                   Platform.runLater(() -> VBox.getChildren().addAll(hBox));
+
+
+                    //
+                } else {
 
                     TextFlow tempFlow = new TextFlow();
 
@@ -137,6 +190,11 @@ public class ChatFormController extends Thread {
 
     //image
     public void picMouseClick(MouseEvent mouseEvent) {
+        Stage stage = (Stage) ((Node) mouseEvent.getSource()).getScene().getWindow();
+        fileChooser = new FileChooser();
+        fileChooser.setTitle("Open Image");
+        this.filePath = fileChooser.showOpenDialog(stage);
+        writer.println(txtClientName.getText() + " " + "img" + filePath.getPath());
     }
 
     //emoji
