@@ -12,7 +12,7 @@ public class AppInitializer extends Application {
         primaryStage.setScene(new Scene(FXMLLoader.load(this.getClass().getResource("view/LoginForm.fxml"))));
         primaryStage.centerOnScreen();
         primaryStage.setTitle("Chat Application");
-        primaryStage.getIcons().add(new Image("lk/ijse/chatApp/view/images/chat-icon.png"));
+        primaryStage.getIcons().add(new Image("lk/ijse/chatApp/view/images/icon.png"));
         primaryStage.setResizable(false);
         primaryStage.show();
     }
