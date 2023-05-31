@@ -136,7 +136,7 @@ public class ChatFormController extends Thread {
 
                     TextFlow tempFlow = new TextFlow();
 
-                    if (!cmd.equalsIgnoreCase(txtClientName.getText() + "-")) {
+                    if (!cmd.equalsIgnoreCase(txtClientName.getText() + ":")) {
                         Text txtName = new Text(cmd + " ");
                         txtName.getStyleClass().add("txtName");
                         tempFlow.getChildren().add(txtName);
@@ -150,7 +150,7 @@ public class ChatFormController extends Thread {
                     Style.setStyleOther(hBox, text, flow);
 
 
-                    if (!cmd.equalsIgnoreCase(txtClientName.getText() + "-")) {
+                    if (!cmd.equalsIgnoreCase(txtClientName.getText() + ":")) {
                         VBox.setAlignment(Pos.TOP_LEFT);
                         hBox.setAlignment(Pos.CENTER_LEFT);
                         hBox.getChildren().add(flow);
@@ -180,8 +180,8 @@ public class ChatFormController extends Thread {
     //msg send
     public void MSGSendMouseAction(MouseEvent mouseEvent) {
         String msg = txtMessage.getText();
-        writer.println(txtClientName.getText() + "- " + msg);
-        System.out.println("send Method======= " + txtClientName.getText() + "- " + msg);
+        writer.println(txtClientName.getText() + ": " + msg);
+        System.out.println("send Method======= " + txtClientName.getText() + ": " + msg);
         txtMessage.clear();
         if (msg.equalsIgnoreCase("exit")) {
             System.exit(0);
