@@ -92,62 +92,62 @@
                     <children>
                         <ImageView fitHeight="35.0" fitWidth="35.0" onMouseClicked="#emoji1" pickOnBounds="true" preserveRatio="true">
                             <image>
-                                <Image url="@images/one.png" />
+                                <Image url="@images/e1.png" />
                             </image>
                         </ImageView>
                         <ImageView fitHeight="35.0" fitWidth="35.0" onMouseClicked="#emoji2" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2">
                             <image>
-                                <Image url="@images/two.png" />
+                                <Image url="@images/e2.png" />
                             </image>
                         </ImageView>
                         <ImageView fitHeight="35.0" fitWidth="35.0" onMouseClicked="#emoji3" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4">
                             <image>
-                                <Image url="@images/three.png" />
+                                <Image url="@images/e3.png" />
                             </image>
                         </ImageView>
                         <ImageView fitHeight="35.0" fitWidth="35.0" onMouseClicked="#emoji4" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2">
                             <image>
-                                <Image url="@images/four.png" />
+                                <Image url="@images/e4.png" />
                             </image>
                         </ImageView>
                         <ImageView fitHeight="35.0" fitWidth="35.0" onMouseClicked="#emoji5" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="2">
                             <image>
-                                <Image url="@images/five.png" />
+                                <Image url="@images/e5.png" />
                             </image>
                         </ImageView>
                         <ImageView fitHeight="35.0" fitWidth="35.0" onMouseClicked="#emoji6" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="2">
                             <image>
-                                <Image url="@images/six.png" />
+                                <Image url="@images/e6.png" />
                             </image>
                         </ImageView>
                         <ImageView fitHeight="35.0" fitWidth="35.0" onMouseClicked="#emoji7" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="4">
                             <image>
-                                <Image url="@images/seven.png" />
+                                <Image url="@images/e7.png" />
                             </image>
                         </ImageView>
                         <ImageView fitHeight="35.0" fitWidth="35.0" onMouseClicked="#emoji8" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="4">
                             <image>
-                                <Image url="@images/eight.png" />
+                                <Image url="@images/e8.png" />
                             </image>
                         </ImageView>
                         <ImageView fitHeight="35.0" fitWidth="35.0" onMouseClicked="#emoji9" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="4">
                             <image>
-                                <Image url="@images/nine.png" />
+                                <Image url="@images/e9.png" />
                             </image>
                         </ImageView>
                         <ImageView fitHeight="35.0" fitWidth="35.0" onMouseClicked="#emoji10" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="6">
                             <image>
-                                <Image url="@images/ten.png" />
+                                <Image url="@images/e10.png" />
                             </image>
                         </ImageView>
                         <ImageView fitHeight="35.0" fitWidth="35.0" onMouseClicked="#emoji11" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="6">
                             <image>
-                                <Image url="@images/eleven.png" />
+                                <Image url="@images/e11.png" />
                             </image>
                         </ImageView>
                         <ImageView fitHeight="35.0" fitWidth="35.0" onMouseClicked="#emoji12" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="6">
                             <image>
-                                <Image url="@images/twelve.png" />
+                                <Image url="@images/e12.png" />
                             </image>
                         </ImageView>
                     </children>

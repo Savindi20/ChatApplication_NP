@@ -210,64 +210,64 @@ public class ChatFormController extends Thread {
     }
 
     public void emoji2(MouseEvent mouseEvent) {
-        String emoji = new String(Character.toChars(0x1F600));
+        String emoji = new String(Character.toChars(0x1F60D));
         txtMessage.setText(emoji);
         EmojiPane.setVisible(false);
     }
 
     public void emoji3(MouseEvent mouseEvent) {
-        String emoji = new String(Character.toChars(0x1F603));
+        String emoji = new String(Character.toChars(0x1F602));
         txtMessage.setText(emoji);
         EmojiPane.setVisible(false);
     }
 
     public void emoji4(MouseEvent mouseEvent) {
-        String emoji = new String(Character.toChars(0x1F604));
+        String emoji = new String(Character.toChars(0x1F44D));
         txtMessage.setText(emoji);
         EmojiPane.setVisible(false);
     }
 
     public void emoji5(MouseEvent mouseEvent) {
-        String emoji = new String(Character.toChars(0x1F601));
+        String emoji = new String(Character.toChars(0x2764));
         txtMessage.setText(emoji);
         EmojiPane.setVisible(false);
     }
 
     public void emoji6(MouseEvent mouseEvent) {
-        String emoji = new String(Character.toChars(0x1F605));
+        String emoji = new String(Character.toChars(0x1F609));
         txtMessage.setText(emoji);
         EmojiPane.setVisible(false);
     }
 
     public void emoji7(MouseEvent mouseEvent) {
-        String emoji = new String(Character.toChars(0x1F923));
+        String emoji = new String(Character.toChars(0x1F622));
         txtMessage.setText(emoji);
         EmojiPane.setVisible(false);
     }
 
     public void emoji8(MouseEvent mouseEvent) {
-        String emoji = new String(Character.toChars(0x1F60D));
+        String emoji = new String(Character.toChars(0x1F644));
         txtMessage.setText(emoji);  EmojiPane.setVisible(false);
     }
 
     public void emoji9(MouseEvent mouseEvent) {
-        String emoji = new String(Character.toChars(0x1F60E));
+        String emoji = new String(Character.toChars(0x1F64F));
         txtMessage.setText(emoji);  EmojiPane.setVisible(false);
     }
 
     public void emoji10(MouseEvent mouseEvent) {
-        String emoji = new String(Character.toChars(0x1F607));
+        String emoji = new String(Character.toChars(0x1F60E));
         txtMessage.setText(emoji);  EmojiPane.setVisible(false);
     }
 
     public void emoji11(MouseEvent mouseEvent) {
 
-        String emoji = new String(Character.toChars(0x1F608));
+        String emoji = new String(Character.toChars(0x2728));
         txtMessage.setText(emoji);  EmojiPane.setVisible(false);
     }
 
     public void emoji12(MouseEvent mouseEvent) {
-        String emoji = new String(Character.toChars(0x1F608));
+        String emoji = new String(Character.toChars(0x1F60A));
         txtMessage.setText(emoji);  EmojiPane.setVisible(false);
     }
 
